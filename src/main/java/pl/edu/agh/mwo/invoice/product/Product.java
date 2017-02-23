@@ -19,7 +19,7 @@ public abstract class Product {
 		if(price == null)
 			throw new IllegalArgumentException("price is null");
 		else if(price.floatValue()<0)
-			throw new IllegalArgumentException("price is negative");
+			throw new IllegalArgumentException("price can't be negative");
 		else
 			this.price = price;
 		this.taxPercent = tax;
